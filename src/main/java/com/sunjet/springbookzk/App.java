@@ -14,7 +14,16 @@ public class App {
     }
 
     @GetMapping("/mvvm")
-    public String mvvmExample() {
+    public String mvvm() {
         return "mvvm";
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "index";
+    }
+    @GetMapping("/navbar")
+    public String navbar() {
+        return "navbar";
     }
 }
