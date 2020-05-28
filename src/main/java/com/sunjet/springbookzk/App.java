@@ -13,9 +13,9 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-    @GetMapping("/mvvm")
-    public String mvvm() {
-        return "mvvm";
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
     }
 
     @GetMapping("/index")
@@ -25,5 +25,10 @@ public class App {
     @GetMapping("/navbar")
     public String navbar() {
         return "navbar";
+    }
+
+    @GetMapping("/chart")
+    public String chart() {
+        return "chart";
     }
 }

@@ -1,0 +1,6 @@
+<window title="Hello Window" viewModel="@id('vm') @init('com.sunjet.springbookzk.vm.HelloVM')">
+    <hlayout valign="middle">
+        <label value="@load(vm.currentTime)"/>
+        <button iconSclass="z-icon-refresh" onClick="@command('updateTime')"/>
+    </hlayout>
+</window>

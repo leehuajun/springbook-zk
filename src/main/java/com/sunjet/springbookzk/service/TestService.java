@@ -1,4 +1,4 @@
-package com.sunjet.springbookzk;
+package com.sunjet.springbookzk.service;
 
 import org.springframework.stereotype.Service;
 

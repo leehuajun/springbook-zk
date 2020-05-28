@@ -6,6 +6,7 @@
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <?link rel="shortcut icon" type="image/x-icon" href="resource/images/favicon.ico"?>
 <!-- Load Bootstrap  -->
+<?link href="/css/style.css" rel="stylesheet" type="text/css"?>
 <!--<?link href="resource/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"?>-->
 <!-- Google Open Sans font -->
 <!-- Load fonts from local -->
@@ -24,11 +25,11 @@
                 style="margin:0px 0px;padding:0px 0px;"
                 onClientInfo="@command('showClientInfo',evt=event)">
     <north sclass="navbar">
-      <include src="~./zul/navbar.zul"/>
+      <include src="~./navbar.zul"/>
     </north>
     <west title="功能导航" collapsible="true" style="margin:0px 0px;padding:0px 0px" splittable="true" sclass="sidebar"
           width="200px" minsize="100" maxsize="400" vflex="min">
-        <include src="~./zul/sidebar.zul"/>
+        <include src="~./sidebar.zul"/>
     </west>
     <center style="margin:0px 0px;padding:0px 0px;">
       <div id="mainScreen" height="100%" width="100%">

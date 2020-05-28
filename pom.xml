@@ -48,6 +48,12 @@
 <!--            <artifactId>spring-boot-starter</artifactId>-->
 <!--        </dependency>-->
 
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-devtools</artifactId>-->
+<!--            <optional>true</optional>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -69,6 +75,12 @@
 <!--                </exclusion>-->
 <!--            </exclusions>-->
 <!--        </dependency>-->
+
+        <dependency>
+            <groupId>tools.dynamia.zk.addons</groupId>
+            <artifactId>chartjs-zk</artifactId>
+            <version>2.7.3</version>
+        </dependency>
 
         <dependency>
             <groupId>org.zkoss.zk</groupId>
@@ -94,6 +106,13 @@
             <version>${zk.version}</version>
         </dependency>
 
+
+<!--        <dependency>-->
+<!--            <groupId>org.zkoss</groupId>-->
+<!--            <artifactId>zkgooglecharts</artifactId>-->
+<!--            <version>0.3.0</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -112,6 +131,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+<!--                <configuration>-->
+<!--                    <fork>true</fork> &lt;!&ndash;重要&ndash;&gt;-->
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
