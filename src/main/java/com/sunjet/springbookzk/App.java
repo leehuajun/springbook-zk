@@ -22,6 +22,7 @@ public class App {
     public String index() {
         return "index";
     }
+
     @GetMapping("/navbar")
     public String navbar() {
         return "navbar";
@@ -30,5 +31,10 @@ public class App {
     @GetMapping("/chart")
     public String chart() {
         return "chart";
+    }
+
+    @GetMapping("/ace")
+    public String ace() {
+        return "ace";
     }
 }
