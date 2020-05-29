@@ -9,13 +9,17 @@
   .z-tabpanel {
     border: none;
     //border-left: 1px solid $base_border_color;
-    overflow-y: scroll;
+    //overflow-y: scroll;
+    overflow-y: auto;
     padding: 10px;
+    //height: 100% !important;
     //padding-top: 10px;
     //padding-left: 10px;
     //padding-right: 10px;
     //padding-bottom: 0px;
     //padding: 0px;
+
+
     margin: 0px 0px;
     //
     background-color: $tab-background-color;
@@ -33,7 +37,7 @@
       background-color: $tab-background-color;
       //border-right: 1px solid #FFFFFF;
       border-right: 1px solid $border-color;
-      padding: 1px 5px;
+      padding: 1px 7px;
       box-shadow:none;
       @include border-radius(0px);
 
@@ -46,12 +50,15 @@
         font-weight: bold;
       }
       .z-tab-button {
+        right: 7px !important;
         .z-tab-icon {
           top: 45%;
           width: 15px;
           height: 15px;
           //color: $default;
           line-height: 15px;
+          font-size: 12px;
+          font-weight: bold;
           @include border-radius(50%);
           &:hover {
             @include transition(all 0.3s ease);
@@ -76,17 +83,20 @@
         }
       }
       .z-tab-button {
+        right: 7px !important;
         .z-tab-icon {
           //top: 40%;
           //width: 15px;
           //height: 15px;
           color: $default;
           //line-height: 15px;
-          //@include border-radius(50%);
+          @include border-radius(50%);
           &:hover {
             @include transition(all 0.3s ease);
-            background-color: $default;
-            color: $font-reversed-color;
+            //background-color: $default;
+            //color: $font-reversed-color;
+            //color: darken($default, 10%);
+            //font-weight: bold;
           }
         }
       }

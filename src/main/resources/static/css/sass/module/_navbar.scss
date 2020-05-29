@@ -31,6 +31,7 @@
   @include border-radius(0px);
 
   & .username-ellipsis {
+    background-color: $default !important;
     &.z-menu {
       width: 100px;
     }
@@ -39,6 +40,9 @@
       overflow: hidden;
       text-overflow: ellipsis;
       vertical-align: middle;
+    }
+    & .z-menu-content {
+      background-color: transparent;
     }
   }
 
@@ -93,6 +97,7 @@
       line-height: 40px;
       height: 40px;
       padding: 0px 6px 0px;
+      background-color: transparent;
       & i {
         color: $font-reversed-color;
         vertical-align: middle;
@@ -133,7 +138,7 @@
   }
 
   & .z-menu .z-menu-icon, .z-menuitem .z-menu-icon {
-    top: 2px;
+    top: 12px;
   }
 
   & ul {

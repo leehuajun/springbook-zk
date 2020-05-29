@@ -1,9 +1,9 @@
-package com.sunjet.springbookzk.service;
+package com.sunjet.springbookzk.service.system;
 
 
-import com.sunjet.springbookzk.entity.MenuEntity;
+import com.sunjet.springbookzk.entity.system.MenuEntity;
 import com.sunjet.springbookzk.exception.MisException;
-import com.sunjet.springbookzk.repository.MenuRepository;
+import com.sunjet.springbookzk.repository.system.MenuRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

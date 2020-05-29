@@ -1,14 +1,17 @@
 package com.sunjet.springbookzk.vm;
 
-import com.sunjet.springbookzk.entity.MenuEntity;
-import com.sunjet.springbookzk.service.MenuService;
+import com.sunjet.springbookzk.entity.system.MenuEntity;
+import com.sunjet.springbookzk.exception.TabDuplicateException;
+import com.sunjet.springbookzk.service.system.MenuService;
+import com.sunjet.springbookzk.utils.zk.CustomTreeNode;
 import com.sunjet.springbookzk.utils.zk.MenuTreeUtil;
+import com.sunjet.springbookzk.utils.zk.ZkTabboxUtil;
+import com.sunjet.springbookzk.utils.zk.ZkUtils;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.zk.ui.Component;
-import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.ClientInfoEvent;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.select.Selectors;
@@ -17,7 +20,6 @@ import org.zkoss.zul.DefaultTreeModel;
 import org.zkoss.zul.Tab;
 import org.zkoss.zul.TreeModel;
 import org.zkoss.zul.Treeitem;
-import org.zkoss.zul.theme.Themes;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -80,12 +82,12 @@ public class IndexVM {
      */
     @Command
     public void showIndex() {
-//        try {
-////            ZkTabboxUtil.newTab("welcome", "欢迎", "z-icon-home", false, ZkTabboxUtil.OverFlowType.AUTO, "/welcome.zul", null);
-//            ZkTabboxUtil.newTab("portal", "首页", "z-icon-home", false, ZkTabboxUtil.OverFlowType.AUTO, "/portal.zul", null);
-//        } catch (TabDuplicateException e) {
-//            e.printStackTrace();
-//        }
+        try {
+//            ZkTabboxUtil.newTab("welcome", "欢迎", "z-icon-home", false, ZkTabboxUtil.OverFlowType.AUTO, "/welcome.zul", null);
+            ZkTabboxUtil.newTab("portal", "首页", "z-icon-home", false, ZkTabboxUtil.OverFlowType.AUTO, "portal.zul", null);
+        } catch (TabDuplicateException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -96,41 +98,41 @@ public class IndexVM {
     @NotifyChange({"mapMenuStatus", "mapMenuIcon"})
     @Command
     public void openTab(@BindingParam("e") Event e) {
-//        Treeitem treeitem = (Treeitem) e.getTarget();
-////        System.out.println("树节点状态：" + treeitem.isOpen());
-////        通过treeitem.getValue()方法也可以获得TreeNode对象
-//        CustomTreeNode node = treeitem.getValue();
-//
-////        System.out.println("子节点个数:" + node.getChildCount());
-//
-//
-//        // 更改导航树的图标样式
-//        if (node.getChildCount() > 0) {
-//            if (treeitem.isOpen()) {
-//                treeitem.setOpen(false);
-//            } else {
-//                Collection<Treeitem> items = treeitem.getTree().getItems();
-//
-//                items.forEach(t->t.setOpen(false));
-//
-//                treeitem.setOpen(true);
-//            }
-//        } else {
-//            MenuEntity menuInfo = (MenuEntity) node.getData();
-//            try {
-//                String url = (menuInfo.getUrl() == null || menuInfo.getUrl().trim().equalsIgnoreCase("null") || menuInfo.getUrl().trim().equals("")) ?
-//                        "/sorry.zul"
-//                        : menuInfo.getUrl();
-//                if (url.contains("http://")) {
-//                    ZkUtils.sendRedirect(url, "_blank");
-//                    return;
-//                }
-//                String iconSclass = menuInfo.getIcon();
-//                ZkTabboxUtil.newTab(menuInfo.getId(), menuInfo.getName(), iconSclass, true, ZkTabboxUtil.OverFlowType.AUTO, url, null);
-//            } catch (TabDuplicateException ex) {
-//                ex.printStackTrace();
-//            }
-//        }
+        Treeitem treeitem = (Treeitem) e.getTarget();
+//        System.out.println("树节点状态：" + treeitem.isOpen());
+//        通过treeitem.getValue()方法也可以获得TreeNode对象
+        CustomTreeNode node = treeitem.getValue();
+
+//        System.out.println("子节点个数:" + node.getChildCount());
+
+
+        // 更改导航树的图标样式
+        if (node.getChildCount() > 0) {
+            if (treeitem.isOpen()) {
+                treeitem.setOpen(false);
+            } else {
+                Collection<Treeitem> items = treeitem.getTree().getItems();
+
+                items.forEach(t->t.setOpen(false));
+
+                treeitem.setOpen(true);
+            }
+        } else {
+            MenuEntity menuInfo = (MenuEntity) node.getData();
+            try {
+                String url = (menuInfo.getUrl() == null || menuInfo.getUrl().trim().equalsIgnoreCase("null") || menuInfo.getUrl().trim().equals("")) ?
+                        "sorry.zul"
+                        : menuInfo.getUrl();
+                if (url.contains("http://")) {
+                    ZkUtils.sendRedirect(url, "_blank");
+                    return;
+                }
+                String iconSclass = menuInfo.getIcon();
+                ZkTabboxUtil.newTab(menuInfo.getId(), menuInfo.getName(), iconSclass, true, ZkTabboxUtil.OverFlowType.AUTO, url, null);
+            } catch (TabDuplicateException ex) {
+                ex.printStackTrace();
+            }
+        }
     }
 
 //    @Command
@@ -167,17 +169,17 @@ public class IndexVM {
 
     @Command
     public void closeOne(@BindingParam("tabNow") Tab tabNow) {
-//        ZkTabboxUtil.closeOne(tabNow);
+        ZkTabboxUtil.closeOne(tabNow);
     }
 
     @Command
     public void closeAll(@BindingParam("tabs") List<Tab> tabList) {
-//        ZkTabboxUtil.closeAll(tabList);
+        ZkTabboxUtil.closeAll(tabList);
     }
 
     @Command
     public void closeOther(@BindingParam("tabs") List<Tab> tabList, @BindingParam("tabNow") Tab tabNow) {
-//        ZkTabboxUtil.closeOther(tabList,tabNow);
+        ZkTabboxUtil.closeOther(tabList,tabNow);
     }
 
     /**

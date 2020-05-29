@@ -1,6 +1,6 @@
-package com.sunjet.springbookzk.repository;
+package com.sunjet.springbookzk.repository.system;
 
-import com.sunjet.springbookzk.entity.MenuEntity;
+import com.sunjet.springbookzk.entity.system.MenuEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

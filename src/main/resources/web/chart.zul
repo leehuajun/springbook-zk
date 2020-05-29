@@ -24,10 +24,8 @@
                     <chartjs type="bar" title="Bar Chart" data="@load(vm.categoryModel)" width="90%"/>
                 </tabpanel>
                 <tabpanel>
-
                     <chartjs type="pie" title="Pie Chart" data="@load(vm.categoryModel)" width="50%"/>
                     <chartjs type="doughnut" title="Doughnut Chart" data="@load(vm.categoryModel)" width="50%"/>
-
                 </tabpanel>
                 <tabpanel>
                     <chartjs type="horizontalBar" title="Horizontal Bar Chart" data="@load(vm.categoryModel)"

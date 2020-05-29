@@ -1,7 +1,7 @@
 package com.sunjet.springbookzk.utils.zk;
 
 
-import com.sunjet.springbookzk.entity.MenuEntity;
+import com.sunjet.springbookzk.entity.system.MenuEntity;
 import org.zkoss.zul.TreeNode;
 
 import java.util.ArrayList;

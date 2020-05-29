@@ -12,7 +12,8 @@
     padding-top: 10px;
   }
   & .z-borderlayout-icon {
-    @include border-radius(50%);
+    //@include border-radius(50%);
+    @include border-radius(2px);
     color: $font-color;
     font-size: 14px;
     &:hover {
@@ -54,7 +55,8 @@
   & .z-borderlayout-icon {
     color: $font-color;
     font-size: 14px;
-    @include border-radius(50%);
+    //@include border-radius(50%);
+    @include border-radius(2px);
     &:hover {
       @include transition(all 0.3s ease);
       background-color: $default;
@@ -64,6 +66,7 @@
   }
 
   & .z-tree-body{
+    height: 100%;
     & .z-treechildren{
       border: none;
       //border-left: none;

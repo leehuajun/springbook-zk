@@ -22,12 +22,13 @@
 <zk>
   <borderlayout width="100%" height="100%"
                 viewModel="@id('vm') @init('com.sunjet.springbookzk.vm.IndexVM')"
-                style="margin:0px 0px;padding:0px 0px;"
+                style="margin:0px 0px;padding:2px 2px;"
                 onClientInfo="@command('showClientInfo',evt=event)">
     <north sclass="navbar">
       <include src="~./navbar.zul"/>
     </north>
-    <west title="功能导航" collapsible="true" style="margin:0px 0px;padding:0px 0px" splittable="true" sclass="sidebar"
+<!--    title="功能导航"-->
+    <west title="功能导航" collapsible="true" style="margin:0px 0px;padding:0px 0px" sclass="sidebar"
           width="200px" minsize="100" maxsize="400" vflex="min">
         <include src="~./sidebar.zul"/>
     </west>

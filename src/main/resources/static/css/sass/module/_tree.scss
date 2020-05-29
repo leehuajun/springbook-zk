@@ -8,7 +8,7 @@
 
   .z-tree-header {
     .z-treecols {
-      .z-treecol-content{
+      .z-treecol-content {
         background: $default;
         color: $font-reversed-color !important;
         padding: 0px 2px;
@@ -16,10 +16,13 @@
     }
 
   }
-  & .z-tree-body{
+
+  & .z-tree-body {
+    height: 100% !important;
     overflow-y: scroll;
     overflow-x: hidden;
-    & .z-treechildren{
+
+    & .z-treechildren {
       border: none;
       //border-left: none;
       //border-top: none;
@@ -32,9 +35,11 @@
         background-color: whitesmoke;
         line-height: 24px !important;
         min-height: 24px !important;
+
         &:first-child {
           border-top: 1px solid #f5f5f5;
         }
+
         & .z-treecell {
           @include transition(all 0.3s ease);
           border-top: 0px;
@@ -60,6 +65,7 @@
               color: $font-color;
               white-space: nowrap;
             }
+
             & .z-tree-spacer {
               width: 14px;
             }
@@ -67,16 +73,20 @@
         }
 
         &:hover {
-          background-color: lighten($default,5%);
-          .z-treecell{
+          background-color: lighten($default, 5%);
+
+          .z-treecell {
             background-color: transparent;
+
             .z-treecell-content {
               @include transition(all 0.3s ease);
               background-color: rgba($default, .7) !important;
+
               & .z-tree-icon {
                 @include transition(all 0.3s ease);
                 color: $font-reversed-color;
               }
+
               & .z-treecell-text {
                 @include transition(all 0.3s ease);
                 color: $font-reversed-color;
@@ -84,6 +94,7 @@
             }
           }
         }
+
         //  .z-treecell {
         //  background-color: transparent;
         //  > .z-treecell-content {
@@ -100,6 +111,7 @@
         //  }
         //}
       }
+
       & .z-treerow-selected {
         background-color: transparent;
 
@@ -108,25 +120,30 @@
           > .z-treecell-content {
             @include transition(all 0.3s ease);
             background-color: $default !important;
+
             & .z-tree-icon {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;
             }
+
             & .z-treecell-text {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;
             }
           }
         }
+
         &:hover > .z-treecell {
           //background-color: $default !important;
           > .z-treecell-content {
             @include transition(all 0.3s ease);
             background-color: $default !important;
+
             & .z-tree-icon {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;
             }
+
             & .z-treecell-text {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;

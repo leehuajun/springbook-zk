@@ -1,6 +1,7 @@
-package com.sunjet.springbookzk.entity;
+package com.sunjet.springbookzk.entity.system;
 
 
+import com.sunjet.springbookzk.entity.IdSystemEntity;
 import lombok.*;
 
 import javax.persistence.*;
