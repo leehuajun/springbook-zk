@@ -1,5 +1,8 @@
 package com.sunjet.springbookzk.vm;
 
+import com.sunjet.springbookzk.entity.MenuEntity;
+import com.sunjet.springbookzk.service.MenuService;
+import com.sunjet.springbookzk.utils.zk.MenuTreeUtil;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +28,8 @@ import java.util.List;
 @Slf4j
 public class IndexVM {
 
+    @WireVariable
+    private MenuService menuService;
 
     @Getter
     @Setter
@@ -37,30 +42,30 @@ public class IndexVM {
     @Init
     public void init() throws IOException {
 
-//        // 设置 主题样式 为 iceblue_c 紧凑型的 iceblue(这是默认的主题）
-////        Themes.setTheme(Executions.getCurrent(), "iceblue_c");
-////        String theme = Themes.getCurrentTheme();
-////        boolean isNull = Sessions.getCurrent().hasAttribute("currentTheme");
-////        if ((!theme.equals("iceblue_c")) && (!isNull)) {
-////            Themes.setTheme(Executions.getCurrent(), "iceblue_c");
-////            Executions.sendRedirect(null);
-////        }
-//
+        // 设置 主题样式 为 iceblue_c 紧凑型的 iceblue(这是默认的主题）
+//        Themes.setTheme(Executions.getCurrent(), "iceblue_c");
+//        String theme = Themes.getCurrentTheme();
+//        boolean isNull = Sessions.getCurrent().hasAttribute("currentTheme");
+//        if ((!theme.equals("iceblue_c")) && (!isNull)) {
+//            Themes.setTheme(Executions.getCurrent(), "iceblue_c");
+//            Executions.sendRedirect(null);
+//        }
+
 //        System.out.println(this.hasPermission("user:search"));
-////        List<MenuEntity> menus = menuService.findAll();
+        List<MenuEntity> menus = menuService.findAll();
 //        List<MenuEntity> menus = this.getActiveUser().getMenus();
-//        System.out.println(menus.size());
+        System.out.println(menus.size());
+
+//        if(menus!=null) {
+//            menus.forEach(menuInfo -> {
+//                if (menuInfo.getParent() == null) {
+//                    mapMenuIcon.put(menuInfo.getObjId(), "z-icon-chevron-down");
+//                    mapMenuStatus.put(menuInfo.getObjId(), false);
+//                }
+//            });
 //
-////        if(menus!=null) {
-////            menus.forEach(menuInfo -> {
-////                if (menuInfo.getParent() == null) {
-////                    mapMenuIcon.put(menuInfo.getObjId(), "z-icon-chevron-down");
-////                    mapMenuStatus.put(menuInfo.getObjId(), false);
-////                }
-////            });
-////
-//            this.treeModel = new DefaultTreeModel(MenuTreeUtil.getRoot(menus));
-////        }
+            this.treeModel = new DefaultTreeModel(MenuTreeUtil.getRoot(menus));
+//        }
     }
 
     @AfterCompose

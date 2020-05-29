@@ -55,6 +55,21 @@
 <!--        </dependency>-->
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--JPA-spec  数据查询 -->
+        <dependency>
+            <groupId>com.github.wenhao</groupId>
+            <artifactId>jpa-spec</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
@@ -84,11 +99,11 @@
             <artifactId>tools.dynamia.themes.dynamical</artifactId>
             <version>3.6.1.Final</version>
         </dependency>
-        <dependency>
-            <groupId>tools.dynamia.modules</groupId>
-            <artifactId>tools.dynamia.modules.ckeditor</artifactId>
-            <version>4.11.1.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>tools.dynamia.modules</groupId>-->
+<!--            <artifactId>tools.dynamia.modules.ckeditor</artifactId>-->
+<!--            <version>4.11.1.0</version>-->
+<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>tools.dynamia</groupId>-->

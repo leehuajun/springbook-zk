@@ -6,6 +6,21 @@ zk:
   richlet-filter-mapping: /richlet/*
   homepage: index
 spring:
-  devtools:
-    restart:
-      enabled: true
+  jmx:
+    default-domain: springbook-zk
+  datasource:
+    #    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zk?useUnicode=true&serverTimezone=UTC&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: lzw719
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+#    naming:
+#      physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect   #不加这句则默认为myisam引擎
+#    properties:
+#      hibernate:
+#        enable_lazy_load_no_trans: true
