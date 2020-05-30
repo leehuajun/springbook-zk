@@ -62,6 +62,7 @@ public class DemoViewModel {
     @Command
     @NotifyChange("*")
     public void load() {
+        System.out.println("reload");
         initCategoryModel();
         initXYModel();
         initRadarModel();

@@ -1,0 +1,11 @@
+<?page title="ChartJS for ZK 9.x" ?>
+<zk>
+
+    <div hflex="1" vflex="1" apply="org.zkoss.bind.BindComposer"
+         viewModel="@id('vm') @init('com.sunjet.springbookzk.vm.DemoViewModel')">
+        <chartjs type="scatter" title="Mixed Chart" data="@load(vm.mixedModel)" width="90%"/>
+        <hlayout>
+            <button label="Reload" onClick="@command('load')"/>
+        </hlayout>
+    </div>
+</zk>

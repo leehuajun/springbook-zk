@@ -3,9 +3,10 @@
   <!--"z-tree","z-dottree","z-filetree","z-vfiletree"-->
   <borderlayout vflex="1">
     <north height="50px">
-      <div>
-        用户信息
-      </div>
+      <hbox style="padding:5px;padding-left:10px">
+        <image src="img/photo.jpg" style="height:40px;width:40px;border-radius:50%"></image>
+        <div style="padding:5px;padding-left:20px">用户信息</div>
+      </hbox>
     </north>
     <center>
       <tree id="menuTree"

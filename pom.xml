@@ -38,6 +38,7 @@
         <zk.version>9.0.0.1</zk.version>
         <zats.version>2.0.0</zats.version>
         <junit.version>4.12</junit.version>
+        <jasperreports.version>6.12.2</jasperreports.version>
     </properties>
 
 
@@ -118,6 +119,31 @@
 <!--        </dependency>-->
 
 
+        <!--  JasperReport-->
+<!--        <dependency>-->
+<!--            <groupId>net.sf.jasperreports</groupId>-->
+<!--            <artifactId>jasperreports</artifactId>-->
+<!--            <version>${jasperreports.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.sf.jasperreports</groupId>-->
+<!--            <artifactId>jasperreports-fonts</artifactId>-->
+<!--            <version>${jasperreports.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.sf.jasperreports</groupId>-->
+<!--            <artifactId>jasperreports-functions</artifactId>-->
+<!--            <version>${jasperreports.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.sf.jasperreports</groupId>-->
+<!--            <artifactId>jasperreports-metadata</artifactId>-->
+<!--            <version>${jasperreports.version}</version>-->
+<!--        </dependency>-->
+
+
+
+
         <dependency>
             <groupId>org.zkoss.zk</groupId>
             <artifactId>zkbind</artifactId>
@@ -128,6 +154,16 @@
                     <artifactId>slf4j-jdk14</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.zkoss.theme</groupId>
+            <artifactId>iceblue_c</artifactId>
+            <version>${zk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zkoss.zkforge</groupId>
+            <artifactId>ckez</artifactId>
+            <version>4.14.0.0</version>
         </dependency>
 
 <!--        <dependency>-->

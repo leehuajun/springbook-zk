@@ -1,0 +1,23 @@
+<?page title="ACE Editor for ZK 8.x" ?>
+<zk>
+    <aceditor mode="html" width="700px" height="400px"
+              value="Welcome to Ace Editor for ZK"/>
+    <aceditor mode="java" width="700px" height="400px" theme="ambiance">
+        <attribute name="value">
+            Aceditor ace = new Aceditor();
+            ace.setTheme("ambiance");
+            ace.setWidth("500px");
+            ace.setHeight("400px");
+            ace.setMode("java");
+        </attribute>
+    </aceditor>
+    <aceditor mode="groovy" width="700px" height="400px"  theme="xcode" readonly="true" showGutter="false">
+        <attribute name="value">
+            def ace = new Aceditor()
+            ace.theme = "xcode"
+            ace.width = "500px"
+            ace.height = "400px"
+            ace.mode = "groovy"
+        </attribute>
+    </aceditor>
+</zk>

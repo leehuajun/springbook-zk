@@ -1,0 +1,5 @@
+<zk>
+<!--    <include src="URL:sports.sina.com.cn"/>-->
+    <iframe id="iframe" src="http://sports.sina.com.cn" height="90%" width="100%"
+            style="border: 1px solid gray" />
+</zk>

@@ -1,0 +1,11 @@
+<?page title="ChartJS for ZK 9.x" ?>
+<zk>
+
+    <div hflex="1" vflex="1" apply="org.zkoss.bind.BindComposer"
+         viewModel="@id('vm') @init('com.sunjet.springbookzk.vm.DemoViewModel')">
+        <chartjs type="line" title="XY Chart" data="@load(vm.xyModel)" options="@load(vm.xyOptions)" width="90%"/>
+        <hlayout>
+            <button label="Reload" onClick="@command('load')"/>
+        </hlayout>
+    </div>
+</zk>
