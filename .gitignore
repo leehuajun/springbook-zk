@@ -30,3 +30,4 @@ build/
 ### VS Code ###
 .vscode/
 /src/main/resources/static/css/.sass-cache/
+/src/main/resources/rebel.xml
