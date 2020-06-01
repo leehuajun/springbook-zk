@@ -13,12 +13,14 @@
 //$default: rgb(60, 63, 65); //rgb(78,116,149);
 //$default: rgb(2, 109, 3); //rgb(78,116,149);
 //$default: rgb(3, 99, 163); //rgb(78,116,149);
-//$default: rgb(11, 114, 180); //rgb(78,116,149);
-$default: #1071AF;
+$primary-color: rgb(16, 113, 175); //rgb(78,116,149);
+//$primary-color: rgba(39, 129, 191, 0.87);
+
+//$second-color: rgb(71, 74, 84);
 //$default: rgb(2, 148, 3); //rgb(78,116,149);
 
 // 默认字体颜色
-$font-color: darken($default, 20%);
+$font-color: darken($primary-color, 20%);
 // 反转字体颜色
 $font-reversed-color: #ffffff;
 
@@ -28,7 +30,7 @@ $background-color: lighten($border-color, 3%);
 //$default: #0093f9; //rgb(78,116,149);
 //$default: rgb(42,128,175); //rgb(78,116,149);
 //$default: rgb(33,95,124); //rgb(78,116,149);
-$navbar-background-color: $default;
+$navbar-background-color: $primary-color;
 $navbar-color: #ffffff;
 $navbar-line-height: 40px;
 

@@ -20,7 +20,7 @@
     @include border-radius(0px);
     font-weight: 700;
     font-style: normal;
-    color: $default;
+    color: $primary-color;
     display: inline-block;
     min-width: 22px;
     height: 22px;
@@ -37,8 +37,8 @@
     cursor: pointer;
     padding: 1px 4px;
     &:hover {
-      background: $default;
-      border: 1px solid $default;
+      background: $primary-color;
+      border: 1px solid $primary-color;
       //color: #ffffff;
       box-shadow: none;
       .z-paging-icon {
@@ -74,7 +74,7 @@
     height: 20px;
     color: $font-color !important;
     &:focus{
-      border : 1px solid $default;
+      border : 1px solid $primary-color;
     }
   }
   & .z-paging-text {

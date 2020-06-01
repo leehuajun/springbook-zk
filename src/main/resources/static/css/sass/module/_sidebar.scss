@@ -17,7 +17,7 @@
     color: $font-color;
     font-size: 14px;
     &:hover {
-      background-color: $default;
+      background-color: $primary-color;
       //@include border-radius(50%);
       color: $font-reversed-color;
       @include transition(all 0.3s ease);
@@ -41,7 +41,7 @@
   & .z-west-header {
     //border-top: 5px solid $base_border_color;
     //border-bottom: 2px solid $base_border_color;
-    border-bottom: 2px solid $default;
+    border-bottom: 2px solid $primary-color;
     //background-color: $background-color;
     background: $tabs-background-color;
 
@@ -59,7 +59,7 @@
     @include border-radius(2px);
     &:hover {
       @include transition(all 0.3s ease);
-      background-color: $default;
+      background-color: $primary-color;
       //@include border-radius(50%);
       color: $font-reversed-color;
     }
@@ -112,7 +112,7 @@
           background-color: transparent;
           > .z-treecell-content {
             @include transition(all 0.3s ease);
-            background-color: rgba($default, .7) !important;
+            background-color: rgba($primary-color, .7) !important;
             & .z-tree-icon {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;
@@ -131,7 +131,7 @@
           //background-color: $default !important;
           > .z-treecell-content {
             @include transition(all 0.3s ease);
-            background-color: $default !important;
+            background-color: $primary-color !important;
             & .z-tree-icon {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;
@@ -146,7 +146,7 @@
           //background-color: $default !important;
           > .z-treecell-content {
             @include transition(all 0.3s ease);
-            background-color: $default !important;
+            background-color: $primary-color !important;
             & .z-tree-icon {
               @include transition(all 0.3s ease);
               color: $font-reversed-color;

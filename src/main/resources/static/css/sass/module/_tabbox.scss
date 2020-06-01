@@ -25,7 +25,7 @@
     background-color: $tab-background-color;
   }
   .z-tabs {
-    border-bottom: 2px solid $default;
+    border-bottom: 2px solid $primary-color;
     background-color: $tabs-background-color;
     min-height: 32px;
     height: 32px;
@@ -62,7 +62,7 @@
           @include border-radius(50%);
           &:hover {
             @include transition(all 0.3s ease);
-            background-color: $default;
+            background-color: $primary-color;
             color: $font-reversed-color;
           }
         }
@@ -73,13 +73,13 @@
     }
     .z-tab-selected {
       background-color: #FFFFFF !important;
-      border-bottom: 2px solid $default;
+      border-bottom: 2px solid $primary-color;
       box-shadow:none;
       .z-tab-text {
-        color: $default;
+        color: $primary-color;
         &:hover {
           @include transition(all 0.3s ease);
-          color: darken($default, 10%);
+          color: darken($primary-color, 10%);
         }
       }
       .z-tab-button {
@@ -88,7 +88,7 @@
           //top: 40%;
           //width: 15px;
           //height: 15px;
-          color: $default;
+          color: $primary-color;
           //line-height: 15px;
           @include border-radius(50%);
           &:hover {
@@ -104,7 +104,7 @@
   }
 
   .z-toolbar.z-toolbar-tabs {
-    border-bottom: 2px solid $default;
+    border-bottom: 2px solid $primary-color;
     //border-right: 5px solid $base_border_color;
     background-color: $tabs-background-color !important;
     min-height: 32px;
@@ -116,7 +116,7 @@
   .z-tabbox-left-scroll {
     min-height: 32px;
     height: 32px;
-    border-bottom: 2px solid $default;
+    border-bottom: 2px solid $primary-color;
     border-right: 1px solid $border-color;
     @include border-radius(0px);
     //background-color: $default;
@@ -125,7 +125,7 @@
   .z-tabbox-right-scroll {
     min-height: 32px;
     height: 32px;
-    border-bottom: 2px solid $default;
+    border-bottom: 2px solid $primary-color;
     border-left: 1px solid $border-color;
     //background-color: $default;
     @include border-radius(0px);

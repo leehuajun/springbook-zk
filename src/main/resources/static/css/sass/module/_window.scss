@@ -3,7 +3,7 @@
 @import "variables";
 
 .dialog-window {
-  border: 1px solid $default;
+  border: 1px solid $primary-color;
   //border-radius: 0px;
   //padding: 0px;
   background:#d9d9d9;
@@ -13,7 +13,7 @@
 
   & .z-window-header {
     padding: 5px 15px;
-    background-color: $default;
+    background-color: $primary-color;
     color: #FFFFFF;
     & .z-window-close {
       border-radius: 50%;
@@ -48,14 +48,14 @@
   }
 }
 .z-messagebox-window {
-  border: 1px solid $default;
+  border: 1px solid $primary-color;
   //border-radius: 0px;
   //padding: 0px;
   background:#d9d9d9;
   padding:8px;
   & .z-window-header {
     padding: 5px 15px;
-    background-color: $default;
+    background-color: $primary-color;
     color: #FFFFFF;
     & .z-window-close {
       border-radius: 50%;
@@ -87,7 +87,7 @@
 }
 // 对话框移动时的样式
 .z-window-move-ghost {
-  border: 1px solid $default;
+  border: 1px solid $primary-color;
   //@include border-radius(0px);
   //box-shadow: none;
   //padding: 0px;
@@ -95,7 +95,7 @@
   padding:8px;
   & .z-window-header {
     padding: 5px 15px;
-    background-color: $default;
+    background-color: $primary-color;
     color: #FFFFFF;
     & .z-window-close {
       border-radius: 50%;

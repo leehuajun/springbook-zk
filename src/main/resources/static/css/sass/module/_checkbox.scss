@@ -5,11 +5,11 @@
 input[type="checkbox"]:checked {
   //-webkit-appearance:none;
   //background-color: $default;
-  background: $default !important;
+  background: $primary-color !important;
   color: #fff;
 }
 input[type="checkbox"]:hover {
-  border: 1px solid $default !important;
+  border: 1px solid $primary-color !important;
 }
 
 input[type="radio"], input[type="checkbox"] {

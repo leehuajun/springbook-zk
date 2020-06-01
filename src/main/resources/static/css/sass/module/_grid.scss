@@ -6,24 +6,24 @@ $list-row-border: #f2f2f2;
 .list-grid {
   border: none;
   .z-grid-header-border {
-    border: 1px solid $default;
-    border-bottom: 0px solid $default !important;
+    border: 1px solid $primary-color;
+    border-bottom: 0px solid $primary-color !important;
     //border-top: 0px solid $default !important;
     //border-left: 1px solid $default;
     //border-right: 1px solid $default;
   }
   .z-grid-header {
-    background: $default;
+    background: $primary-color;
     //border-bottom: 0px solid darken($border-color,10%);
     .z-auxhead {
       //border-bottom: 0px solid darken($border-color,10%);
       .z-auxheader {
-        background: $default;
+        background: $primary-color;
         border-left: 1px solid darken($border-color, 10%);
         border-bottom: 1px solid darken($border-color, 10%);
 
         &:first-child {
-          border-left: 1px solid $default;
+          border-left: 1px solid $primary-color;
         }
         //&:last-child{
         //  border-right: 1px solid $default;
@@ -44,20 +44,20 @@ $list-row-border: #f2f2f2;
       .z-auxhead-bar {
         border-left: 0px solid darken($border-color, 10%);
         border-bottom: 0px solid darken($border-color, 10%);
-        border-right: 1px solid $default;
-        background: $default;
+        border-right: 1px solid $primary-color;
+        background: $primary-color;
       }
     }
 
     .z-columns {
       //border-bottom: 0px solid darken($border-color,10%);
       .z-column {
-        background: $default;
+        background: $primary-color;
         border-left: 1px solid darken($border-color, 10%);
         //border-bottom: 0px solid darken($border-color,10%);
 
         &:first-child {
-          border-left: 1px solid $default;
+          border-left: 1px solid $primary-color;
         }
         //&:last-child{
         //  border-right: 1px solid $default;
@@ -71,15 +71,15 @@ $list-row-border: #f2f2f2;
           //  padding: 2px 2px;
           //}
           &:active {
-            background: darken($default, 10);
+            background: darken($primary-color, 10);
           }
         }
       }
       .z-columns-bar {
         border-left: 0px solid darken($border-color, 10%);
         border-bottom: 0px solid darken($border-color, 10%);
-        border-right: 1px solid $default;
-        background: $default;
+        border-right: 1px solid $primary-color;
+        background: $primary-color;
       }
 
       .z-column-sort .z-column-sorticon {
@@ -119,7 +119,7 @@ $list-row-border: #f2f2f2;
         &:hover {
           .z-row-inner, .z-cell {
             @include transition(all 0.3s ease);
-            background: rgba($default, .3) !important;
+            background: rgba($primary-color, .3) !important;
           }
         }
         //&:active{
@@ -135,7 +135,7 @@ $list-row-border: #f2f2f2;
       .z-row-selected {
         .z-row-inner, .z-cell {
           @include transition(all 0.3s ease);
-          background: rgba($default, .3) !important;
+          background: rgba($primary-color, .3) !important;
         }
       }
     }
@@ -147,11 +147,11 @@ $list-row-border: #f2f2f2;
   }
 
   .label-index {
-    color: $default;
+    color: $primary-color;
     font-weight: bold;
   }
   .label-distinct {
-    color: $default;
+    color: $primary-color;
     font-weight: bold;
   }
 }
@@ -243,24 +243,24 @@ $list-row-border: #f2f2f2;
 .icon-grid {
   border: none;
   .z-grid-header-border {
-    border: 1px solid $default;
-    border-bottom: 0px solid $default !important;
+    border: 1px solid $primary-color;
+    border-bottom: 0px solid $primary-color !important;
     //border-top: 0px solid $default !important;
     //border-left: 1px solid $default;
     //border-right: 1px solid $default;
   }
   .z-grid-header {
-    background: $default;
+    background: $primary-color;
     //border-bottom: 0px solid darken($border-color,10%);
     .z-auxhead {
       //border-bottom: 0px solid darken($border-color,10%);
       .z-auxheader {
-        background: $default;
+        background: $primary-color;
         border-left: 1px solid darken($border-color, 10%);
         border-bottom: 1px solid darken($border-color, 10%);
 
         &:first-child {
-          border-left: 1px solid $default;
+          border-left: 1px solid $primary-color;
         }
         //&:last-child{
         //  border-right: 1px solid $default;
@@ -281,20 +281,20 @@ $list-row-border: #f2f2f2;
       .z-auxhead-bar {
         border-left: 0px solid darken($border-color, 10%);
         border-bottom: 0px solid darken($border-color, 10%);
-        border-right: 1px solid $default;
-        background: $default;
+        border-right: 1px solid $primary-color;
+        background: $primary-color;
       }
     }
 
     .z-columns {
       //border-bottom: 0px solid darken($border-color,10%);
       .z-column {
-        background: $default;
+        background: $primary-color;
         border-left: 1px solid darken($border-color, 10%);
         //border-bottom: 0px solid darken($border-color,10%);
 
         &:first-child {
-          border-left: 1px solid $default;
+          border-left: 1px solid $primary-color;
         }
         //&:last-child{
         //  border-right: 1px solid $default;
@@ -308,15 +308,15 @@ $list-row-border: #f2f2f2;
           //  padding: 2px 2px;
           //}
           &:active {
-            background: darken($default, 10);
+            background: darken($primary-color, 10);
           }
         }
       }
       .z-columns-bar {
         border-left: 0px solid darken($border-color, 10%);
         border-bottom: 0px solid darken($border-color, 10%);
-        border-right: 1px solid $default;
-        background: $default;
+        border-right: 1px solid $primary-color;
+        background: $primary-color;
       }
 
       .z-column-sort .z-column-sorticon {
@@ -343,7 +343,7 @@ $list-row-border: #f2f2f2;
         }
         &:hover {
           .z-row-inner, .z-cell {
-            background-color: rgba($default, .3);
+            background-color: rgba($primary-color, .3);
           }
         }
         .z-row-inner {

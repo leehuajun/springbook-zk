@@ -46,8 +46,8 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #fff !important;
-  background: $default !important;
-  border-color: $default;
+  background: $primary-color !important;
+  border-color: $primary-color;
   //margin-right: 10px;
   width: 80%;
   //padding-right: 10px;
@@ -58,14 +58,14 @@
 
 .z-messagebox-button:hover {
   color: #ffffff !important;
-  background-color: darken($default, 10%) !important;
-  border-color: darken($default, 10%);
+  background-color: darken($primary-color, 10%) !important;
+  border-color: darken($primary-color, 10%);
 }
 
 .z-messagebox-button:active {
   color: #ffffff !important;
-  background-color: darken($default, 10%) !important;
-  border-color: darken($default, 10%);
+  background-color: darken($primary-color, 10%) !important;
+  border-color: darken($primary-color, 10%);
 }
 
 //.z-messagebox .z-div{

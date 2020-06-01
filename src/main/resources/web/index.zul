@@ -36,7 +36,7 @@
       <div id="mainScreen" height="100%" width="100%">
         <!-- atlantic 主题,使用 #198bc9   sapphire 使用 #8FB9D0  silvergray 使用 #CFCFCF-->
         <!--style="background-color: #FFFFFF;margin:0px 0px;border:1px solid #198bc9">-->
-        <tabbox sclass="main-tabbox" id="mytab" height="100%">
+        <tabbox id="mytab" height="100%">
           <toolbar>
             <menubar width="100%" sclass="tabbox-menubar">
               <menu iconSclass="z-icon-reorder">

@@ -15,7 +15,7 @@
   border-bottom: 1px solid rgb(207,207,207);
   //border: 1px solid #ececec;
   .z-listbox-header {
-    background: $default !important;
+    background: $primary-color !important;
 
     .z-auxhead {
       min-height: 24px;
@@ -30,7 +30,7 @@
           font-style: normal;
           padding: 0px 2px;
           line-height: 24px;
-          background: $default !important;
+          background: $primary-color !important;
           color: white;
           font-weight: bold;
           text-align: center;
@@ -48,7 +48,7 @@
           //color: #333;
           color: $font-reversed-color;
           //background-color: lightgrey;
-          background-color: $default;
+          background-color: $primary-color;
           padding: 0 4px 0 4px;;
           overflow: hidden;
 
@@ -69,7 +69,7 @@
         //color: #333;
         color: $font-reversed-color;
         //background-color: lightgrey;
-        background-color: $default;
+        background-color: $primary-color;
         padding: 0 4px 0 4px;;
         overflow: hidden;
       }
@@ -109,7 +109,7 @@
       &:hover
       .z-listcell {
         @include transition(all 0.3s ease);
-        background: lighten($default, 5%);
+        background: lighten($primary-color, 5%);
 
         .z-listcell-content {
           color: whitesmoke !important;
@@ -117,11 +117,11 @@
         }
         & .z-menu-content {
           padding-right: 10px;
-          color: $default;
+          color: $primary-color;
 
           @include transition(all 0.3s ease);
           color: $font-reversed-color !important;
-          background: lighten($default, 5%) !important;
+          background: lighten($primary-color, 5%) !important;
 
 
           & .z-menu-icon {
@@ -140,17 +140,17 @@
 
     .z-listitem-selected {
       .z-listcell {
-        background: lighten($default, 3%) !important;
+        background: lighten($primary-color, 3%) !important;
         .z-listcell-content {
           color: whitesmoke !important;
         }
         & .z-menu-content {
           padding-right: 10px;
-          color: $default;
+          color: $primary-color;
 
           @include transition(all 0.3s ease);
           color: $font-reversed-color !important;
-          background: lighten($default, 3%) !important;
+          background: lighten($primary-color, 3%) !important;
 
 
           & .z-menu-icon {
@@ -178,14 +178,14 @@
 
 .label-index {
   .z-listcell-content, .z-listgroup-content, .z-listgroupfoot-content, .z-listfooter-content {
-    color: $default;
+    color: $primary-color;
     font-weight: bold;
   }
 }
 
 .label-distinct {
   .z-listcell-content, .z-listgroup-content, .z-listgroupfoot-content, .z-listfooter-content {
-    color: $default;
+    color: $primary-color;
     font-weight: bold;
   }
 }
