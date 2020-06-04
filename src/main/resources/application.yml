@@ -1,7 +1,7 @@
 server:
   port: 8888
 zk:
-  zul-view-resolver-prefix: /
+  zul-view-resolver-prefix: /zul
   zul-view-resolver-suffix: .zul
   richlet-filter-mapping: /richlet/*
   homepage: index

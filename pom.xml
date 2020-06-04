@@ -95,11 +95,17 @@
 <!--            <artifactId>tools.dynamia.zk.reports</artifactId>-->
 <!--            <version>3.6.1.Final</version>-->
 <!--        </dependency>-->
-        <dependency>
-            <groupId>tools.dynamia.themes</groupId>
-            <artifactId>tools.dynamia.themes.dynamical</artifactId>
-            <version>3.6.1.Final</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>tools.dynamia.themes</groupId>-->
+<!--            <artifactId>tools.dynamia.themes.dynamical</artifactId>-->
+<!--            <version>3.6.1.Final</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shiro</groupId>-->
+<!--            <artifactId>shiro-spring-boot-web-starter</artifactId>-->
+<!--            <version>1.5.3</version>-->
+<!--        </dependency>-->
 <!--        <dependency>-->
 <!--            <groupId>tools.dynamia.modules</groupId>-->
 <!--            <artifactId>tools.dynamia.modules.ckeditor</artifactId>-->
@@ -143,7 +149,11 @@
 
 
 
-
+<!--        <dependency>-->
+<!--            <groupId>org.zkoss.zk</groupId>-->
+<!--            <artifactId>zuti</artifactId>-->
+<!--            <version>${zk.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.zkoss.zk</groupId>
             <artifactId>zkbind</artifactId>
@@ -155,6 +165,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.zkoss.zk</groupId>-->
+<!--            <artifactId>zhtml</artifactId>-->
+<!--            <version>${zk.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.zkoss.theme</groupId>
             <artifactId>iceblue_c</artifactId>

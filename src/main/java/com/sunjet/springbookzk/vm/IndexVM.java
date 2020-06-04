@@ -12,6 +12,7 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.zkoss.bind.annotation.*;
 import org.zkoss.zk.ui.Component;
+import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.event.ClientInfoEvent;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.select.Selectors;
@@ -20,6 +21,7 @@ import org.zkoss.zul.DefaultTreeModel;
 import org.zkoss.zul.Tab;
 import org.zkoss.zul.TreeModel;
 import org.zkoss.zul.Treeitem;
+import org.zkoss.zul.theme.Themes;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -41,11 +43,14 @@ public class IndexVM {
     @Setter
     private String now;
 
+    @Getter
+    private String app_version = "v0.0.1 (Alpha)";
+
     @Init
     public void init() throws IOException {
 
         // 设置 主题样式 为 iceblue_c 紧凑型的 iceblue(这是默认的主题）
-//        Themes.setTheme(Executions.getCurrent(), "iceblue_c");
+        Themes.setTheme(Executions.getCurrent(), "iceblue_c");
 //        String theme = Themes.getCurrentTheme();
 //        boolean isNull = Sessions.getCurrent().hasAttribute("currentTheme");
 //        if ((!theme.equals("iceblue_c")) && (!isNull)) {

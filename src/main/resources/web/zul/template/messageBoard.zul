@@ -1,0 +1,8 @@
+<!--<?component name="message" templateURI="~./zul/template/message.zul"?>-->
+<!--<zk xmlns:x="xhtml">-->
+<!--    <x:ul class="media-list media-list-with-divider media-messaging">-->
+<!--        <forEach items="${messages}">-->
+<!--            <message message="${each}" />-->
+<!--        </forEach>-->
+<!--    </x:ul>-->
+<!--</zk>-->

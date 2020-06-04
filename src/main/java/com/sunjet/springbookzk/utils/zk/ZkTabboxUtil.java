@@ -167,7 +167,7 @@ public class ZkTabboxUtil {
         }
 
 //        System.out.println("导向的页面为: " + tabPanelUrl);
-        BaseTabpanel tabpanel = new BaseTabpanel("~./" + tabPanelUrl, tabNew);;
+        BaseTabpanel tabpanel = new BaseTabpanel("~./zul/" + tabPanelUrl, tabNew);;
 //        try {
 //            tabpanel = new BaseTabpanel(tabPanelUrl, tabNew);
 //        } catch (Exception e) {
@@ -189,7 +189,7 @@ public class ZkTabboxUtil {
             e.printStackTrace();
 //            log.error(e.getMessage());
 //            tabpanel = new BaseTabpanel("/sorry.zul", tabNew);
-            tabpanel.setUrl("~./sorry.zul");
+            tabpanel.setUrl("~./zul/sorry.zul");
             tabpanel.render(map);
         }
 

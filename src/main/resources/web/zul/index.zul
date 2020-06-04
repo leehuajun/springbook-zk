@@ -3,8 +3,8 @@
 -->
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
 <?page title="测试系统" contentType="text/html;charset=UTF-8"?>
-<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
-<?link rel="shortcut icon" type="image/x-icon" href="resource/images/favicon.ico"?>
+<!--<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>-->
+<?link rel="shortcut icon" type="image/x-icon" href="/img/photo.jpg"?>
 <!-- Load Bootstrap  -->
 <?link href="/css/style.css" rel="stylesheet" type="text/css"?>
 <!--<?link href="resource/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"?>-->
@@ -25,12 +25,12 @@
                 style="margin:0px 0px;padding:2px 2px;"
                 onClientInfo="@command('showClientInfo',evt=event)">
     <north sclass="navbar">
-      <include src="~./navbar.zul"/>
+      <include src="~./zul/navbar.zul"/>
     </north>
 <!--    title="功能导航"-->
     <west title="功能导航" collapsible="true" style="margin:0px 0px;padding:0px 0px" sclass="sidebar"
           width="200px" minsize="100" maxsize="400" vflex="min">
-        <include src="~./sidebar.zul"/>
+        <include src="~./zul/sidebar.zul"/>
     </west>
     <center style="margin:0px 0px;padding:0px 0px;">
       <div id="mainScreen" height="100%" width="100%">
