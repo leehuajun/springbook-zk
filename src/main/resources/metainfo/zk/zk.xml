@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
 	<config-name>springboot-zk-demo</config-name>
+	<session-config>
+		<device-type>ajax</device-type>
+		<timeout-title>系统提示</timeout-title>
+		<timeout-message>回话超时，请重新加载！</timeout-message>
+		<session-timeout>1800</session-timeout>
+<!--		<timer-keep-alive>true</timer-keep-alive>-->
+	</session-config>
 
 	<!--enable websocket support in ZK 8.5.1 (ZK-3799)  -->
 <!--	<listener>-->

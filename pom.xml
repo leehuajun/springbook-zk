@@ -20,11 +20,11 @@
             <name>ZK CE Repository</name>
             <url>https://mavensync.zkoss.org/maven2</url>
         </repository>
-<!--        <repository>-->
-<!--            <id>ZK EVAL</id>-->
-<!--            <name>ZK Evaluation Repository</name>-->
-<!--            <url>https://mavensync.zkoss.org/eval</url>-->
-<!--        </repository>-->
+        <!--        <repository>-->
+        <!--            <id>ZK EVAL</id>-->
+        <!--            <name>ZK Evaluation Repository</name>-->
+        <!--            <url>https://mavensync.zkoss.org/eval</url>-->
+        <!--        </repository>-->
     </repositories>
 
     <properties>
@@ -32,7 +32,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-<!--        <zkspringboot.version>1.0.4</zkspringboot.version>-->
+        <!--        <zkspringboot.version>1.0.4</zkspringboot.version>-->
         <zkspringboot.version>2.3.0</zkspringboot.version>
         <springboot.version>2.1.0.RELEASE</springboot.version>
         <zk.version>9.0.0.1</zk.version>
@@ -42,23 +42,30 @@
     </properties>
 
 
-
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter</artifactId>-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-devtools</artifactId>-->
-<!--            <optional>true</optional>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-devtools</artifactId>-->
+        <!--            <optional>true</optional>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.session</groupId>-->
+<!--            <artifactId>spring-session-data-redis</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -90,70 +97,69 @@
             <artifactId>aceditor-zk</artifactId>
             <version>1.4.4</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>tools.dynamia</groupId>-->
-<!--            <artifactId>tools.dynamia.zk.reports</artifactId>-->
-<!--            <version>3.6.1.Final</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>tools.dynamia.themes</groupId>-->
-<!--            <artifactId>tools.dynamia.themes.dynamical</artifactId>-->
-<!--            <version>3.6.1.Final</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>tools.dynamia</groupId>-->
+        <!--            <artifactId>tools.dynamia.zk.reports</artifactId>-->
+        <!--            <version>3.6.1.Final</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>tools.dynamia.themes</groupId>-->
+        <!--            <artifactId>tools.dynamia.themes.dynamical</artifactId>-->
+        <!--            <version>3.6.1.Final</version>-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.apache.shiro</groupId>-->
-<!--            <artifactId>shiro-spring-boot-web-starter</artifactId>-->
-<!--            <version>1.5.3</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>tools.dynamia.modules</groupId>-->
-<!--            <artifactId>tools.dynamia.modules.ckeditor</artifactId>-->
-<!--            <version>4.11.1.0</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.shiro</groupId>-->
+        <!--            <artifactId>shiro-spring-boot-web-starter</artifactId>-->
+        <!--            <version>1.5.3</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>tools.dynamia.modules</groupId>-->
+        <!--            <artifactId>tools.dynamia.modules.ckeditor</artifactId>-->
+        <!--            <version>4.11.1.0</version>-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>tools.dynamia</groupId>-->
-<!--            <artifactId>tools.dynamia.zk.app</artifactId>-->
-<!--            <version>3.6.1.Final</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>tools.dynamia</groupId>-->
+        <!--            <artifactId>tools.dynamia.zk.app</artifactId>-->
+        <!--            <version>3.6.1.Final</version>-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>tools.dynamia</groupId>-->
-<!--            <artifactId>tools.dynamia.domain.jpa</artifactId>-->
-<!--            <version>3.6.1.Final</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>tools.dynamia</groupId>-->
+        <!--            <artifactId>tools.dynamia.domain.jpa</artifactId>-->
+        <!--            <version>3.6.1.Final</version>-->
+        <!--        </dependency>-->
 
 
         <!--  JasperReport-->
-<!--        <dependency>-->
-<!--            <groupId>net.sf.jasperreports</groupId>-->
-<!--            <artifactId>jasperreports</artifactId>-->
-<!--            <version>${jasperreports.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>net.sf.jasperreports</groupId>-->
-<!--            <artifactId>jasperreports-fonts</artifactId>-->
-<!--            <version>${jasperreports.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>net.sf.jasperreports</groupId>-->
-<!--            <artifactId>jasperreports-functions</artifactId>-->
-<!--            <version>${jasperreports.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>net.sf.jasperreports</groupId>-->
-<!--            <artifactId>jasperreports-metadata</artifactId>-->
-<!--            <version>${jasperreports.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>net.sf.jasperreports</groupId>-->
+        <!--            <artifactId>jasperreports</artifactId>-->
+        <!--            <version>${jasperreports.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>net.sf.jasperreports</groupId>-->
+        <!--            <artifactId>jasperreports-fonts</artifactId>-->
+        <!--            <version>${jasperreports.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>net.sf.jasperreports</groupId>-->
+        <!--            <artifactId>jasperreports-functions</artifactId>-->
+        <!--            <version>${jasperreports.version}</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>net.sf.jasperreports</groupId>-->
+        <!--            <artifactId>jasperreports-metadata</artifactId>-->
+        <!--            <version>${jasperreports.version}</version>-->
+        <!--        </dependency>-->
 
 
-
-<!--        <dependency>-->
-<!--            <groupId>org.zkoss.zk</groupId>-->
-<!--            <artifactId>zuti</artifactId>-->
-<!--            <version>${zk.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.zkoss.zk</groupId>-->
+        <!--            <artifactId>zuti</artifactId>-->
+        <!--            <version>${zk.version}</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.zkoss.zk</groupId>
             <artifactId>zkbind</artifactId>
@@ -165,11 +171,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.zkoss.zk</groupId>-->
-<!--            <artifactId>zhtml</artifactId>-->
-<!--            <version>${zk.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.zkoss.zk</groupId>-->
+        <!--            <artifactId>zhtml</artifactId>-->
+        <!--            <version>${zk.version}</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.zkoss.theme</groupId>
             <artifactId>iceblue_c</artifactId>
@@ -181,11 +187,11 @@
             <version>4.14.0.0</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.zkoss.zk</groupId>-->
-<!--            <artifactId>zuti</artifactId>-->
-<!--            <version>${zk.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.zkoss.zk</groupId>-->
+        <!--            <artifactId>zuti</artifactId>-->
+        <!--            <version>${zk.version}</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.zkoss.zk</groupId>
@@ -194,11 +200,11 @@
         </dependency>
 
 
-<!--        <dependency>-->
-<!--            <groupId>org.zkoss</groupId>-->
-<!--            <artifactId>zkgooglecharts</artifactId>-->
-<!--            <version>0.3.0</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.zkoss</groupId>-->
+        <!--            <artifactId>zkgooglecharts</artifactId>-->
+        <!--            <version>0.3.0</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -218,9 +224,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-<!--                <configuration>-->
-<!--                    <fork>true</fork> &lt;!&ndash;重要&ndash;&gt;-->
-<!--                </configuration>-->
+                <!--                <configuration>-->
+                <!--                    <fork>true</fork> &lt;!&ndash;重要&ndash;&gt;-->
+                <!--                </configuration>-->
             </plugin>
         </plugins>
     </build>

@@ -30,8 +30,8 @@ public class PortalVM {
 //    public static final String ADD_NEW_MESSAGE = "addNewMessage";
 //    public static final String HANDLE_PANEL_BUTTON = "handlePanelButton";
 //    public static final String VIEW_DETAIL = "viewDetail";
-//    @Getter
-//    private ListModelList<StatBox> myStats = new ListModelList<StatBox>();
+    @Getter
+    private ListModelList<StatBox> myStats = new ListModelList<StatBox>();
 //    @Getter
 //    private ListModelList<Message> myMessages = new ListModelList<Message>();
 //    @Getter
@@ -48,10 +48,10 @@ public class PortalVM {
 
     @Init
     public void init() throws IOException {
-//        myStats.add(new StatBox("totalVisitorClick", "TOTAL VISITORS", "3,291,922", "fa-desktop", "green"));
-//        myStats.add(new StatBox("bounceRateClick", "BOUNCE RATE", "20,44%", "fa-chain-broken ", "blue"));
-//        myStats.add(new StatBox("uniqueVisitorClick", "UNIQUE VISITORS", "1,291,922", "fa-users","purple"));
-//        myStats.add(new StatBox("avgTimeClick", "AVG TIME ON SITE", "00:12:23", "fa-clock-o", "red"));
+        myStats.add(new StatBox("totalVisitorClick", "TOTAL VISITORS", "3,291,922", "fa-desktop", "green"));
+        myStats.add(new StatBox("bounceRateClick", "BOUNCE RATE", "20,44%", "fa-chain-broken ", "blue"));
+        myStats.add(new StatBox("uniqueVisitorClick", "UNIQUE VISITORS", "1,291,922", "fa-users","purple"));
+        myStats.add(new StatBox("avgTimeClick", "AVG TIME ON SITE", "00:12:23", "fa-clock-o", "red"));
 //
 //        myMessages.add(new Message(new User("John Doe", "./img/user-5.jpg"), "Lorem ipsum dolor sit " +
 //                "amet, consectetur adipiscing elit. Morbi id nunc non eros fermentum vestibulum ut id " +

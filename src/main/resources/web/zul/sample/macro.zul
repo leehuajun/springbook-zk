@@ -1,0 +1,9 @@
+<?page title="Macro" ?>
+<window title="Macro" viewModel="@id('vm') @init('com.sunjet.springbookzk.vm.sample.MacroVM')">
+    <vbox>
+        <div>
+            <button label="加载宏组件" onClick="@command('openMacro')"/>
+            <div id="ddd"/>
+        </div>
+    </vbox>
+</window>

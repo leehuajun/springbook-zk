@@ -1,0 +1,11 @@
+<?page title="EL-Expressions" ?>
+<window title="EL" viewModel="@id('vm') @init('com.sunjet.springbookzk.vm.sample.ElExpressionVM')">
+    <vbox>
+        <textbox id="tb" value="${self.parent.parent.title}"/> <!-- self is an implicit object referring to itself -->
+        ${tb.value} <!-- tb is an ID (of textbox) -->
+        <button label="Enter" if="${not empty param.edit}"/>
+        <zscript>Date now = new Date();</zscript>
+        <datebox value="${now}"/> <!-- now is defined in zscript -->
+        <button onClick="@command('changeTextBoxValue')" label="更改文本框内容"/>
+    </vbox>
+</window>
